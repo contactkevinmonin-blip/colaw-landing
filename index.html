@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#f0eee6" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1c1a16" media="(prefers-color-scheme: dark)" />
+
+<!-- ============ SEO PRIMAIRE ============ -->
+<title>COLAW — L'assistant juridique IA souverain pour les professionnels du droit</title>
+<meta name="description" content="COLAW est l'assistant juridique IA souverain : recherche, analyse et rédaction d'actes sur un corpus juridique français et européen complet, tenu à jour. Données pseudonymisées, application de bureau Windows & macOS. Essai gratuit 30 jours." />
+<meta name="keywords" content="assistant juridique IA, IA juridique souveraine, logiciel juridique intelligence artificielle, IA droit français, rédaction actes juridiques IA, IA avocat, IA cabinet d'avocats, IA juriste, recherche juridique IA, corpus juridique français, veille juridique JORF, IA droit européen, confidentialité RGPD juridique" />
+<link rel="canonical" href="https://colaw.fr/" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="COLAW" />
+<meta name="language" content="French" />
+<link rel="alternate" hreflang="fr" href="https://colaw.fr/" />
+<link rel="alternate" hreflang="x-default" href="https://colaw.fr/" />
+
+<!-- ============ OPEN GRAPH ============ -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="COLAW" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="COLAW — L'assistant juridique IA souverain" />
+<meta property="og:description" content="Recherche, analyse et rédaction d'actes aux normes, sur un corpus juridique FR & UE complet. Données pseudonymisées. Application de bureau Windows & macOS." />
+<meta property="og:url" content="https://colaw.fr/" />
+<meta property="og:image" content="https://colaw.fr/assets/og-image.svg" />
+<meta property="og:image:type" content="image/svg+xml" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="COLAW — assistant juridique IA souverain" />
+
+<!-- ============ TWITTER ============ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="COLAW — L'assistant juridique IA souverain" />
+<meta name="twitter:description" content="L'IA juridique souveraine : corpus FR & UE complet, données pseudonymisées, rédaction d'actes aux normes. Windows & macOS." />
+<meta name="twitter:image" content="https://colaw.fr/assets/og-image.svg" />
+
+<!-- ============ ICONS / MANIFEST ============ -->
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- ============ PERF ============ -->
+<link rel="preload" href="/assets/styles.css" as="style" />
+<link rel="stylesheet" href="/assets/styles.css" />
+
+<!-- Anti-flash thème (avant paint) -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("colaw-theme");
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+
+<!-- ============ JSON-LD : Organization ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "COLAW",
+  "url": "https://colaw.fr/",
+  "logo": "https://colaw.fr/assets/brand-mark.svg",
+  "description": "Éditeur de l'assistant juridique IA souverain COLAW.",
+  "areaServed": "FR",
+  "knowsLanguage": "fr"
+}
+</script>
+
+<!-- ============ JSON-LD : SoftwareApplication + offres ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "COLAW",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Assistant juridique IA",
+  "operatingSystem": "Windows, macOS",
+  "url": "https://colaw.fr/",
+  "softwareVersion": "1.0",
+  "description": "Assistant juridique IA souverain : recherche, analyse et rédaction d'actes sur un corpus juridique français et européen complet et tenu à jour. Données pseudonymisées.",
+  "featureList": [
+    "Corpus juridique français et européen complet",
+    "Mise à jour en continu (veille JORF)",
+    "Rédaction d'actes et d'articles longs aux normes",
+    "Pseudonymisation systématique des données",
+    "Application de bureau Windows et macOS"
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "350",
+    "highPrice": "600",
+    "offerCount": "4",
+    "offers": [
+      { "@type": "Offer", "name": "Premium — engagement 12 mois", "price": "350", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Premium — sans engagement", "price": "450", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Illimité — engagement 12 mois", "price": "500", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Illimité — sans engagement", "price": "600", "priceCurrency": "EUR" }
+    ]
+  }
+}
+</script>
+
+<!-- ============ JSON-LD : FAQPage ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce qu'une IA juridique souveraine ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "COLAW traite vos données en posture souveraine : les informations sensibles sont pseudonymisées avant tout traitement, et le corpus juridique reste maîtrisé de bout en bout. Vous gardez le contrôle sur ce qui sort de votre poste." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sur quel corpus juridique COLAW s'appuie-t-il ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "COLAW couvre le droit français et européen : codes, lois, décrets, jurisprudence administrative et judiciaire, sources DILA et EUR-Lex. Le corpus est tenu à jour en continu via une veille sur le Journal officiel (JORF)." }
+    },
+    {
+      "@type": "Question",
+      "name": "COLAW peut-il rédiger des actes juridiques ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. COLAW rédige des actes, courriers et articles longs aux normes — contrats, mises en demeure, conclusions, notes — en s'appuyant sur les fondements textuels exacts, avec citation des articles et de la jurisprudence applicables." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mes données clients sont-elles confidentielles ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. La pseudonymisation est systématique : noms, identifiants et données personnelles sont masqués avant traitement. COLAW est conçu pour un usage professionnel respectueux du secret et du RGPD." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sur quels systèmes COLAW fonctionne-t-il ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "COLAW est une application de bureau native pour Windows et macOS. Vous la téléchargez et l'installez directement sur votre poste." }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je essayer COLAW gratuitement ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, 30 jours d'essai gratuit avec l'accès complet aux capacités Premium, sans engagement. À l'issue de l'essai, l'abonnement bascule sur COLAW Premium, résiliable à tout moment." }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="haut">
+  <div class="wrap header-inner">
+    <a class="brand" href="#haut" aria-label="COLAW — accueil">
+      <img class="brand-seal" src="/assets/brand-mark.svg" alt="" width="34" height="34" aria-hidden="true" />
+      <span class="brand-word">COLAW</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="Navigation principale">
+      <a href="#fonctions">Fonctions</a>
+      <a href="#souverainete">Souveraineté</a>
+      <a href="#telecharger">Télécharger</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Changer de thème" title="Changer de thème">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm header-dl" href="#telecharger">Télécharger</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="contenu">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow reveal">Assistant juridique · IA souveraine</p>
+      <h1 class="hero-title reveal">Le droit, à la vitesse<br />de la pensée — <em>souverain.</em></h1>
+      <p class="hero-sub reveal">
+        COLAW recherche, analyse et rédige des actes aux normes sur un corpus
+        juridique français et européen complet, tenu à jour en continu.
+        Vos données sont pseudonymisées avant tout traitement.
+      </p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary btn-lg" href="#telecharger" id="heroDownload">Télécharger COLAW</a>
+        <a class="btn btn-ghost btn-lg" href="#tarifs">Essai gratuit 30 jours</a>
+      </div>
+      <p class="hero-os reveal" id="heroOs">Windows &amp; macOS · installation en une minute</p>
+
+      <ul class="trust-strip reveal" aria-label="Points de confiance">
+        <li><span class="dot"></span> Corpus FR &amp; UE complet</li>
+        <li><span class="dot"></span> Veille JORF en continu</li>
+        <li><span class="dot"></span> Pseudonymisation systématique</li>
+        <li><span class="dot"></span> Rédaction d'actes aux normes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== SOUVERAINETÉ ==================== -->
+  <section class="band-sov" id="souverainete">
+    <div class="wrap">
+      <div class="sov-grid">
+        <div class="sov-lead reveal">
+          <p class="eyebrow">Souveraineté</p>
+          <h2>Vos dossiers ne vous échappent jamais.</h2>
+          <p class="lead-text">
+            La confidentialité n'est pas une option que l'on coche : c'est
+            l'architecture. Avant qu'une requête ne quitte votre poste, COLAW
+            masque les noms, identifiants et données personnelles. Vous exploitez
+            la puissance d'une grande IA sans exposer le secret professionnel.
+          </p>
+        </div>
+        <div class="sov-points">
+          <div class="sov-point reveal">
+            <h3>Posture pseudonymisée</h3>
+            <p>Seules des données masquées circulent. Les entités sensibles sont détectées et remplacées en amont, puis restituées localement.</p>
+          </div>
+          <div class="sov-point reveal">
+            <h3>Corpus maîtrisé</h3>
+            <p>Droit français et européen, sources officielles DILA et EUR-Lex, jurisprudence administrative et judiciaire — pas d'approximation.</p>
+          </div>
+          <div class="sov-point reveal">
+            <h3>Fraîcheur du droit</h3>
+            <p>Une veille sur le Journal officiel maintient le corpus à jour : versions en vigueur, abrogations et entrées en vigueur suivies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FONCTIONS ==================== -->
+  <section class="section" id="fonctions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Ce que COLAW fait pour vous</p>
+        <h2>Un cabinet de recherche et de rédaction, dans une seule application.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <span class="feature-num">01</span>
+          <h3>Recherche juridique sourcée</h3>
+          <p>Posez la vraie question de droit. COLAW confronte les textes — général contre spécial, principe contre exception — et cite nommément les articles et arrêts applicables.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">02</span>
+          <h3>Rédaction d'actes aux normes</h3>
+          <p>Contrats, mises en demeure, conclusions, courriers, notes : des actes structurés et fondés en droit, prêts à relire, pas des brouillons génériques.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">03</span>
+          <h3>Analyse de documents</h3>
+          <p>Importez un contrat ou une décision : COLAW en dégage les points saillants, les risques et les fondements, et répond sur pièce.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">04</span>
+          <h3>Rédaction longue</h3>
+          <p>Articles et actes de vingt pages et plus, tenus sur la longueur, cohérents du plan à la conclusion — sans perdre le fil ni les références.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">05</span>
+          <h3>Actes administratifs</h3>
+          <p>Arrêtés, décisions, délibérations, réclamations : COLAW maîtrise l'acte administratif unilatéral comme le contentieux privé.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">06</span>
+          <h3>Anti-hallucination</h3>
+          <p>Validité temporelle, hiérarchie des normes, ancrage sur le fondement canonique : COLAW privilégie l'exactitude à l'esbroufe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMMENT ÇA MARCHE ==================== -->
+  <section class="band-steps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">En trois gestes</p>
+        <h2>De la question à l'acte, sans quitter votre bureau.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-k">1</span>
+          <h3>Installez</h3>
+          <p>Téléchargez l'application de bureau Windows ou macOS. Aucune configuration : COLAW est opérationnel en une minute.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-k">2</span>
+          <h3>Demandez</h3>
+          <p>Formulez votre question ou décrivez l'acte à produire, en langage naturel. COLAW identifie le régime applicable et retrouve les sources.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-k">3</span>
+          <h3>Livrez</h3>
+          <p>Récupérez une réponse sourcée ou un acte rédigé aux normes, prêt à relire et à envoyer. Vos données ne sont jamais exposées en clair.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== TÉLÉCHARGER ==================== -->
+  <section class="section" id="telecharger">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Application de bureau</p>
+        <h2>Téléchargez COLAW.</h2>
+        <p class="section-sub">Native, rapide, sur votre poste. Choisissez votre système — nous avons pré-sélectionné le vôtre.</p>
+      </div>
+      <div class="dl-grid">
+        <a class="dl-card reveal" id="dlMac" href="#" data-os="mac">
+          <svg class="dl-logo" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.417 2.2-1.11 2.98-.84.94-2.2 1.66-3.34 1.57-.14-1.12.42-2.28 1.06-3 .72-.82 2-1.44 3.06-1.5.02.32.02.63.02.95zM20.9 17.1c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.38 3.5-4.1 3.52-1.53.01-1.92-1-4-1-2.07 0-2.5.98-4.03 1.01-1.72.03-3.03-1.69-4.02-3.25-2.77-4.35-3.06-9.46-1.35-12.17 1.21-1.93 3.13-3.06 4.93-3.06 1.84 0 3 1.01 4.52 1.01 1.48 0 2.38-1.01 4.51-1.01 1.6 0 3.31.87 4.52 2.38-3.98 2.18-3.33 7.85.08 9.61z"/></svg>
+          <div class="dl-body">
+            <span class="dl-for">Télécharger pour</span>
+            <span class="dl-os">macOS</span>
+            <span class="dl-meta" id="dlMacMeta">Apple Silicon &amp; Intel · .dmg</span>
+          </div>
+          <span class="dl-arrow" aria-hidden="true">↓</span>
+        </a>
+        <a class="dl-card reveal" id="dlWin" href="#" data-os="win">
+          <svg class="dl-logo" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" aria-hidden="true"><path d="M3 5.1 10.4 4v7.3H3V5.1zm0 13.8 7.4 1v-7.2H3v6.2zM11.3 3.9 21 2.5v8.8h-9.7V3.9zm0 8.4H21v8.8l-9.7-1.4v-7.4z"/></svg>
+          <div class="dl-body">
+            <span class="dl-for">Télécharger pour</span>
+            <span class="dl-os">Windows</span>
+            <span class="dl-meta">Windows 10 &amp; 11 · .exe</span>
+          </div>
+          <span class="dl-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <p class="dl-note reveal">30 jours d'essai gratuit inclus. Sans engagement pendant l'essai.</p>
+    </div>
+  </section>
+
+  <!-- ==================== TARIFS ==================== -->
+  <section class="section band-price" id="tarifs">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tarifs</p>
+        <h2>Un tarif clair, sans surprise.</h2>
+        <p class="section-sub">Deux formules, un essai gratuit. Choisissez l'engagement 12 mois pour le meilleur tarif, ou la liberté totale sans engagement.</p>
+      </div>
+
+      <div class="price-toggle reveal" role="tablist" aria-label="Modalité d'abonnement">
+        <button class="pt-btn is-active" id="ptEngage" role="tab" aria-selected="true" type="button">Engagement 12 mois <span class="pt-save">−22 %</span></button>
+        <button class="pt-btn" id="ptFlex" role="tab" aria-selected="false" type="button">Sans engagement</button>
+      </div>
+
+      <div class="price-grid">
+        <!-- Premium -->
+        <article class="price-card reveal">
+          <div class="pc-head">
+            <h3>Premium</h3>
+            <p class="pc-tag">Pour le praticien exigeant.</p>
+          </div>
+          <div class="pc-price">
+            <span class="pc-amount" data-engage="350" data-flex="450">350</span>
+            <span class="pc-unit">€ HT / mois</span>
+          </div>
+          <p class="pc-billing" data-engage="Engagement 12 mois" data-flex="Sans engagement, résiliable à tout moment">Engagement 12 mois</p>
+          <ul class="pc-feats">
+            <li>Corpus juridique FR &amp; UE complet</li>
+            <li>Mises à jour en continu (veille JORF)</li>
+            <li>Rédaction d'actes &amp; articles longs</li>
+            <li>Analyse de documents</li>
+            <li>Pseudonymisation systématique</li>
+            <li>Support prioritaire</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#telecharger">Commencer l'essai</a>
+        </article>
+
+        <!-- Illimité (mis en avant) -->
+        <article class="price-card is-featured reveal">
+          <span class="pc-badge">Recommandé</span>
+          <div class="pc-head">
+            <h3>Illimité</h3>
+            <p class="pc-tag">Pour les cabinets &amp; directions juridiques.</p>
+          </div>
+          <div class="pc-price">
+            <span class="pc-amount" data-engage="500" data-flex="600">500</span>
+            <span class="pc-unit">€ HT / mois</span>
+          </div>
+          <p class="pc-billing" data-engage="Engagement 12 mois" data-flex="Sans engagement, résiliable à tout moment">Engagement 12 mois</p>
+          <ul class="pc-feats">
+            <li><strong>Usage illimité</strong> — aucun plafond de requêtes</li>
+            <li>Priorité de traitement maximale</li>
+            <li>Accès anticipé aux nouvelles capacités</li>
+            <li>Tout COLAW Premium inclus</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#telecharger">Commencer l'essai</a>
+        </article>
+
+        <!-- Essai -->
+        <article class="price-card is-trial reveal">
+          <div class="pc-head">
+            <h3>Essai gratuit</h3>
+            <p class="pc-tag">Testez sans risque.</p>
+          </div>
+          <div class="pc-price">
+            <span class="pc-amount">0</span>
+            <span class="pc-unit">€ · 30 jours</span>
+          </div>
+          <p class="pc-billing">Puis Premium, résiliable à tout moment</p>
+          <ul class="pc-feats">
+            <li>Accès Premium complet, 30 jours</li>
+            <li>Sans engagement</li>
+            <li>Bascule automatique en fin d'essai</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#telecharger">Démarrer gratuitement</a>
+        </article>
+      </div>
+      <p class="price-foot reveal">Tarifs hors taxes. L'engagement 12 mois est porté par l'abonnement ; sans engagement, résiliable à tout moment.</p>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section" id="faq">
+    <div class="wrap wrap-narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Tout ce qu'il faut savoir.</h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item reveal">
+          <summary>Qu'est-ce qu'une IA juridique « souveraine » ?</summary>
+          <p>COLAW traite vos données en posture souveraine : les informations sensibles sont pseudonymisées avant tout traitement, et le corpus juridique reste maîtrisé de bout en bout. Vous gardez le contrôle sur ce qui sort de votre poste.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Sur quel corpus juridique COLAW s'appuie-t-il ?</summary>
+          <p>Droit français et européen : codes, lois, décrets, jurisprudence administrative et judiciaire, sources DILA et EUR-Lex. Le corpus est tenu à jour en continu via une veille sur le Journal officiel (JORF).</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>COLAW peut-il vraiment rédiger des actes ?</summary>
+          <p>Oui — contrats, mises en demeure, conclusions, courriers, notes — en s'appuyant sur les fondements textuels exacts, avec citation des articles et de la jurisprudence applicables. Vous relisez et signez.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Mes données clients sont-elles confidentielles ?</summary>
+          <p>Oui. La pseudonymisation est systématique : noms, identifiants et données personnelles sont masqués avant traitement. COLAW est conçu pour un usage professionnel respectueux du secret et du RGPD.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Sur quels systèmes COLAW fonctionne-t-il ?</summary>
+          <p>Une application de bureau native pour Windows (10 &amp; 11) et macOS (Apple Silicon &amp; Intel). Vous la téléchargez et l'installez directement sur votre poste.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Comment fonctionne l'essai gratuit ?</summary>
+          <p>30 jours d'accès complet aux capacités Premium, sans engagement. À l'issue de l'essai, l'abonnement bascule sur COLAW Premium, résiliable à tout moment.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA FINAL ==================== -->
+  <section class="cta-band">
+    <div class="wrap cta-inner reveal">
+      <img class="cta-seal" src="/assets/brand-mark.svg" alt="" width="52" height="52" aria-hidden="true" />
+      <h2>Donnez à votre pratique la puissance d'une IA — sans céder le secret.</h2>
+      <p>Installez COLAW aujourd'hui et essayez gratuitement pendant 30 jours.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" href="#telecharger">Télécharger COLAW</a>
+        <a class="btn btn-ghost btn-lg" href="#tarifs">Voir les tarifs</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#haut" aria-label="COLAW">
+        <img class="brand-seal" src="/assets/brand-mark.svg" alt="" width="30" height="30" aria-hidden="true" />
+        <span class="brand-word">COLAW</span>
+      </a>
+      <p class="footer-tag">L'assistant juridique IA souverain.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Pied de page">
+      <div class="fn-col">
+        <span class="fn-title">Produit</span>
+        <a href="#fonctions">Fonctions</a>
+        <a href="#telecharger">Télécharger</a>
+        <a href="#tarifs">Tarifs</a>
+      </div>
+      <div class="fn-col">
+        <span class="fn-title">En savoir plus</span>
+        <a href="#souverainete">Souveraineté</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="fn-col">
+        <span class="fn-title">Contact</span>
+        <a href="mailto:contact@colaw.fr">contact@colaw.fr</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-legal">
+    <span>© <span id="year">2026</span> COLAW. Tous droits réservés.</span>
+    <span>Conçu pour les professionnels du droit.</span>
+  </div>
+</footer>
+
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

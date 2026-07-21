@@ -1,0 +1,18 @@
+# COLAW — robots.txt
+# Autorise l'indexation complète + accès explicite aux crawlers IA (GEO).
+User-agent: *
+Allow: /
+
+# Crawlers de recherche IA (Google AI Overviews, ChatGPT, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://colaw.fr/sitemap.xml
