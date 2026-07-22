@@ -105,12 +105,12 @@ a { color: inherit; text-decoration: none; }
 .wrap-narrow { max-width: 760px; }
 
 /* ---------- Marque ---------- */
-.brand { display: inline-flex; align-items: center; gap: 0.55rem; }
-.brand-seal { width: 34px; height: 34px; }
+.brand { display: inline-flex; align-items: center; gap: 0.62rem; }
+.brand-seal { width: 46px; height: 46px; }
 .brand-word {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 1.32rem;
+  font-size: 1.6rem;
   letter-spacing: 0.02em;
   background: linear-gradient(120deg, var(--accent) 0%, var(--accent-hover) 100%);
   -webkit-background-clip: text; background-clip: text;
@@ -461,7 +461,8 @@ h1, h2, h3, .hero-title, .pc-amount { overflow-wrap: break-word; }
 /* ===== Très petits écrans (≤ 380px) ===== */
 @media (max-width: 380px) {
   .wrap { padding: 0 14px; }
-  .brand-word { font-size: 1.18rem; }
+  .brand-word { font-size: 1.4rem; }
+  .brand-seal { width: 40px; height: 40px; }
   .hero-title { font-size: clamp(2rem, 8.5vw, 2.4rem); }
   .pc-amount { font-size: 2.4rem; }
   .trust-strip { gap: 0.5rem 1.1rem; }
