@@ -49,8 +49,9 @@
 <script>
   (function () {
     try {
-      var t = localStorage.getItem("colaw-theme");
-      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      // Défaut = mode jour (light), quel que soit le réglage OS.
+      // On respecte uniquement un choix explicite déjà fait par l'utilisateur.
+      var t = localStorage.getItem("colaw-theme") || "light";
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
